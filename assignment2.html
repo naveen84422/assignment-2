@@ -6,9 +6,7 @@
     <table>
       <tr>
         <td><label for="first_name">First Name*</label></td>
-        <td>
-          <input type="text" required name="first_name" id="first_name" />
-        </td>
+        <td><input type="text" required name="first_name" id="first_name" /></td>
       </tr>
       <tr>
         <td><label for="last_name">Last Name*</label></td>
@@ -21,25 +19,14 @@
       <tr>
         <td>Gender</td>
         <td>
-          <input type="radio" name="gender" id="male" value="M" /><label
-            for="male"
-            >Male</label
-          >
-          <input type="radio" name="gender" id="female" value="F" /><label
-            for="female"
-            >Female</label
-          >
-          <input type="radio" name="gender" id="other" value="O" /><label
-            for="other"
-            >Other</label
-          >
+          <input type="radio" name="gender" id="male" value="M" /><label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="F" /><label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="O" /><label for="other">Other</label>
         </td>
       </tr>
       <tr>
         <td><label for="profile_pic">Profile Picture*</label></td>
-        <td>
-          <input type="file" name="profile_pic" id="profile_pic" required />
-        </td>
+        <td><input type="file" name="profile_pic" id="profile_pic" required /></td>
       </tr>
     </table>
   </fieldset>
@@ -53,21 +40,11 @@
       </tr>
       <tr>
         <td><label for="mobile_no">Phone number*</label></td>
-        <td>
-          <input
-            type="tel"
-            name="mobile_no"
-            required
-            placeholder="10-digit number"
-            id="mobile_no"
-          />
-        </td>
+        <td><input type="tel" name="mobile_no" required placeholder="10-digit number" id="mobile_no" /></td>
       </tr>
       <tr>
         <td><label for="address">Address</label></td>
-        <td>
-          <textarea name="address" id="address" rows="2" cols="25"></textarea>
-        </td>
+        <td><textarea name="address" id="address" rows="2" cols="25"></textarea></td>
       </tr>
       <tr>
         <td><label for="country">Country</label></td>
@@ -120,43 +97,17 @@
       <tr>
         <td>Preferred Location</td>
         <td>
-          <input
-            type="radio"
-            name="location"
-            id="bangalore"
-            value="Bangalore"
-          /><label for="bangalore">Bangalore</label>
-          <input type="radio" name="location" id="delhi" value="Delhi" /><label
-            for="delhi"
-            >Delhi</label
-          >
-          <input
-            type="radio"
-            name="location"
-            id="remote"
-            value="Remote"
-          /><label for="remote">Remote</label>
-          <input type="radio" name="location" id="pune" value="Pune" /><label
-            for="pune"
-            >Pune</label
-          >
+          <input type="radio" name="location" id="bangalore" value="Bangalore" /><label for="bangalore">Bangalore</label>
+          <input type="radio" name="location" id="delhi" value="Delhi" /><label for="delhi">Delhi</label>
+          <input type="radio" name="location" id="remote" value="Remote" /><label for="remote">Remote</label>
+          <input type="radio" name="location" id="pune" value="Pune" /><label for="pune">Pune</label>
         </td>
       </tr>
       <tr>
         <td>Willing to Relocate?</td>
         <td>
-          <input
-            type="radio"
-            name="relocate"
-            id="relocate_yes"
-            value="Yes"
-          /><label for="relocate_yes">Yes</label>
-          <input
-            type="radio"
-            name="relocate"
-            id="relocate_no"
-            value="No"
-          /><label for="relocate_no">No</label>
+          <input type="radio" name="relocate" id="relocate_yes" value="Yes" /><label for="relocate_yes">Yes</label>
+          <input type="radio" name="relocate" id="relocate_no" value="No" /><label for="relocate_no">No</label>
         </td>
       </tr>
     </table>
@@ -168,21 +119,12 @@
       <tr>
         <td><label for="password">Password*</label></td>
         <td>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            required
-            minlength="6"
-            placeholder="Min 6 characters"
-          />
+          <input type="password" name="password" id="password" required minlength="6" placeholder="Min 6 characters" />
         </td>
       </tr>
       <tr>
         <td><label for="cpassword">Confirm Password*</label></td>
-        <td>
-          <input type="password" required name="cpassword" id="cpassword" />
-        </td>
+        <td><input type="password" required name="cpassword" id="cpassword" /></td>
       </tr>
     </table>
   </fieldset>
@@ -192,9 +134,7 @@
     <table>
       <tr>
         <td><label for="resume">Upload Resume (PDF only)*</label></td>
-        <td>
-          <input type="file" name="resume" id="resume" accept=".pdf" required />
-        </td>
+        <td><input type="file" name="resume" id="resume" accept=".pdf" required /></td>
       </tr>
     </table>
   </fieldset>
@@ -202,8 +142,7 @@
   <fieldset>
     <legend>Agreement</legend>
     <input type="checkbox" required name="agreement" id="agreement" />
-    <label for="agreement">I agree to the terms and conditions*</label
-    ><br /><br />
+    <label for="agreement">I agree to the terms and conditions*</label><br /><br />
     <input type="submit" name="submit" value="Submit Application" />
     <input type="reset" name="reset" value="Reset Form" />
   </fieldset>
