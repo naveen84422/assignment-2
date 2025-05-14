@@ -1,37 +1,45 @@
-<h1><center>JOb Application Form</center></h1>
+<h1><center>Job Application Form</center></h1>
 
-<form action="" autocomplete="" target="_blank">
+<form action="" autocomplete="on" target="_blank">
   <fieldset>
     <legend>Personal Information</legend>
-
     <table>
       <tr>
-        <td><label for="">First Name*</label></td>
-        <td><input type="text" required name="first_name" id="" /></td>
-      </tr>
-
-      <tr>
-        <td><label for="">Last Name*</label></td>
-        <td><input type="text" required name="last_name" id="" /></td>
-      </tr>
-
-      <tr>
-        <td><label for="">Date of Birth</label></td>
-        <td><input type="date" name="DOB" id="" /></td>
-      </tr>
-
-      <tr>
-        <td><label for="">Gender</label></td>
+        <td><label for="first_name">First Name*</label></td>
         <td>
-          <input type="radio" name="gender" id="" value="M" />male
-          <input type="radio" name="gender" id="" value="F" />female
-          <input type="radio" name="gender" id="" value="O" />other
+          <input type="text" required name="first_name" id="first_name" />
         </td>
       </tr>
-
       <tr>
-        <td><label for="">Profile Picture*</label></td>
-        <td><input type="file" name="" id="" /></td>
+        <td><label for="last_name">Last Name*</label></td>
+        <td><input type="text" required name="last_name" id="last_name" /></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth</label></td>
+        <td><input type="date" name="DOB" id="dob" /></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" id="male" value="M" /><label
+            for="male"
+            >Male</label
+          >
+          <input type="radio" name="gender" id="female" value="F" /><label
+            for="female"
+            >Female</label
+          >
+          <input type="radio" name="gender" id="other" value="O" /><label
+            for="other"
+            >Other</label
+          >
+        </td>
+      </tr>
+      <tr>
+        <td><label for="profile_pic">Profile Picture*</label></td>
+        <td>
+          <input type="file" name="profile_pic" id="profile_pic" required />
+        </td>
       </tr>
     </table>
   </fieldset>
@@ -40,35 +48,34 @@
     <legend>Contact Information</legend>
     <table>
       <tr>
-        <td><label for="">Email</label></td>
-        <td><input type="email" name="email" id="" /></td>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" name="email" id="email" /></td>
       </tr>
-
       <tr>
-        <td><label for="">Phone number*</label></td>
+        <td><label for="mobile_no">Phone number*</label></td>
         <td>
           <input
             type="tel"
             name="mobile_no"
             required
             placeholder="10-digit number"
-            id=""
+            id="mobile_no"
           />
         </td>
       </tr>
-
       <tr>
-        <td><label for="">Address</label></td>
-        <td><textarea name="textarea" id="" rows="2" cols="25"></textarea></td>
-      </tr>
-
-      <tr>
-        <td><label for="">Country</label></td>
+        <td><label for="address">Address</label></td>
         <td>
-          <select name="country" id="">
-            <option value="">India</option>
-            <option value="">USA</option>
-            <option value="">UK</option>
+          <textarea name="address" id="address" rows="2" cols="25"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="country">Country</label></td>
+        <td>
+          <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
           </select>
         </td>
       </tr>
@@ -79,82 +86,103 @@
     <legend>Educational Background</legend>
     <table>
       <tr>
-        <td><label for="">Hightest Qualification</label></td>
+        <td><label for="qualification">Highest Qualification</label></td>
         <td>
-          <select name="Qualification" id="">
+          <select name="Qualification" id="qualification">
             <option value="G">Graduate</option>
             <option value="PG">Post Graduate</option>
             <option value="PHD">Ph.D</option>
           </select>
         </td>
       </tr>
-
       <tr>
-        <td><label for="">Specialization</label></td>
-        <td><input type="text" name="" id="" /></td>
+        <td><label for="specialization">Specialization</label></td>
+        <td><input type="text" name="specialization" id="specialization" /></td>
       </tr>
-
       <tr>
-        <td><label for="">Year of Graduation</label></td>
-        <td>
-          <input type="number" name="YOG" id="" />
-        </td>
+        <td><label for="YOG">Year of Graduation</label></td>
+        <td><input type="number" name="YOG" id="YOG" /></td>
       </tr>
     </table>
   </fieldset>
 
   <fieldset>
     <legend>Job Preferences</legend>
-
     <table>
       <tr>
-        <td><label for="">Preferred Role</label></td>
-        <td><input type="text" name="role" id="" /></td>
+        <td><label for="role">Preferred Role</label></td>
+        <td><input type="text" name="role" id="role" /></td>
       </tr>
-
       <tr>
-        <td><label for="">Expected salary</label></td>
-        <td><input type="number" name="salary" id="" /></td>
+        <td><label for="salary">Expected salary</label></td>
+        <td><input type="number" name="salary" id="salary" /></td>
       </tr>
-
       <tr>
-        <td><label for="">Preferred Location</label></td>
+        <td>Preferred Location</td>
         <td>
-          <input type="radio" name="" id="" />Banglore
-          <input type="radio" name="" id="" />Delhi
-          <input type="radio" name="" id="" />Remote
-          <input type="radio" name="" id="" />Pune
+          <input
+            type="radio"
+            name="location"
+            id="bangalore"
+            value="Bangalore"
+          /><label for="bangalore">Bangalore</label>
+          <input type="radio" name="location" id="delhi" value="Delhi" /><label
+            for="delhi"
+            >Delhi</label
+          >
+          <input
+            type="radio"
+            name="location"
+            id="remote"
+            value="Remote"
+          /><label for="remote">Remote</label>
+          <input type="radio" name="location" id="pune" value="Pune" /><label
+            for="pune"
+            >Pune</label
+          >
         </td>
       </tr>
-
       <tr>
-        <td><label for="">willing to Relocate?</label></td>
-        <td><input type="radio" name="Relocate?" id="" /></td>
+        <td>Willing to Relocate?</td>
+        <td>
+          <input
+            type="radio"
+            name="relocate"
+            id="relocate_yes"
+            value="Yes"
+          /><label for="relocate_yes">Yes</label>
+          <input
+            type="radio"
+            name="relocate"
+            id="relocate_no"
+            value="No"
+          /><label for="relocate_no">No</label>
+        </td>
       </tr>
     </table>
   </fieldset>
 
   <fieldset>
     <legend>Create Account</legend>
-
     <table>
       <tr>
-        <td><label for="">password*</label></td>
+        <td><label for="password">Password*</label></td>
         <td>
           <input
             type="password"
             name="password"
-            id=""
+            id="password"
             required
             minlength="6"
             placeholder="Min 6 characters"
           />
         </td>
       </tr>
-
       <tr>
-        <td><label for="">Confirm Password*</label></td>
-        <td><input type="password" required name="cpassword" id="" /></td>
+        <td><label for="cpassword">Confirm Password*</label></td>
+        <td>
+          <input type="password" required name="cpassword" id="cpassword" />
+        </td>
       </tr>
     </table>
   </fieldset>
@@ -163,17 +191,20 @@
     <legend>Resume</legend>
     <table>
       <tr>
-        <td><label for="">Upload Resume(pdf only)*</label></td>
-        <td><input type="file" name="" id="" /></td>
+        <td><label for="resume">Upload Resume (PDF only)*</label></td>
+        <td>
+          <input type="file" name="resume" id="resume" accept=".pdf" required />
+        </td>
       </tr>
     </table>
   </fieldset>
 
   <fieldset>
     <legend>Agreement</legend>
-    <input type="radio" required name="Agreement" id="" />
-    <label for="">I agree to the terms and conditions*</label><br />
-    <input type="submit" name="submit" id="" placeholder="Submit Application" />
-    <input type="reset" name="reset" id="" placeholder="Reset Form" />
+    <input type="checkbox" required name="agreement" id="agreement" />
+    <label for="agreement">I agree to the terms and conditions*</label
+    ><br /><br />
+    <input type="submit" name="submit" value="Submit Application" />
+    <input type="reset" name="reset" value="Reset Form" />
   </fieldset>
 </form>
